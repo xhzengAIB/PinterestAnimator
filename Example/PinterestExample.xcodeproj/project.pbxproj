@@ -11,6 +11,7 @@
 		7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6257001973883D005D8CB7 /* AppDelegate.m */; };
 		7D6257031973883D005D8CB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6257021973883D005D8CB7 /* Images.xcassets */; };
 		7D62570F1973883D005D8CB7 /* PinterestExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */; };
+		7D62571B19738927005D8CB7 /* XHPinterestTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D62571A19738927005D8CB7 /* XHPinterestTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,9 @@
 		7D6257081973883D005D8CB7 /* PinterestExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D62570D1973883D005D8CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinterestExampleTests.m; sourceTree = "<group>"; };
+		7D62571919738927005D8CB7 /* XHPinterestTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestTransition.h; sourceTree = "<group>"; };
+		7D62571A19738927005D8CB7 /* XHPinterestTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestTransition.m; sourceTree = "<group>"; };
+		7D62571C19738995005D8CB7 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		7D6256EF1973883D005D8CB7 = {
 			isa = PBXGroup;
 			children = (
+				7D625718197388E6005D8CB7 /* Pinterest */,
 				7D6256FA1973883D005D8CB7 /* PinterestExample */,
 				7D62570B1973883D005D8CB7 /* PinterestExampleTests */,
 				7D6256F91973883D005D8CB7 /* Products */,
@@ -106,6 +111,17 @@
 				7D62570D1973883D005D8CB7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D625718197388E6005D8CB7 /* Pinterest */ = {
+			isa = PBXGroup;
+			children = (
+				7D62571C19738995005D8CB7 /* XHUIKitMacro.h */,
+				7D62571919738927005D8CB7 /* XHPinterestTransition.h */,
+				7D62571A19738927005D8CB7 /* XHPinterestTransition.m */,
+			);
+			name = Pinterest;
+			path = ../Pinterest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +223,7 @@
 			files = (
 				7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */,
 				7D6256FE1973883D005D8CB7 /* main.m in Sources */,
+				7D62571B19738927005D8CB7 /* XHPinterestTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PinterestExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -322,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PinterestExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -382,6 +401,7 @@
 				7D6257141973883D005D8CB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D6257151973883D005D8CB7 /* Build configuration list for PBXNativeTarget "PinterestExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -390,6 +410,7 @@
 				7D6257171973883D005D8CB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
