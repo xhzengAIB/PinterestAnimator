@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "XHNavigationController.h"
+#import "XHWaterfallViewController.h"
+
 @interface AppDelegate ()
             
 
@@ -20,6 +23,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    XHNavigationController *navigationController = [[XHNavigationController alloc] initWithRootViewController:[[XHWaterfallViewController alloc] init]];
+    self.window.rootViewController = navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
