@@ -13,7 +13,7 @@ PinterestAnimator like Pinterest 3.0++ App transition animation.
 
 Gratitude
 =================
-## 1、
+## 1、Swift Demo
 
 - Thanks you [demon1105](https://github.com/demon1105) create [PinterestSwift](https://github.com/demon1105/PinterestSwift).                                
 
@@ -23,7 +23,7 @@ Gratitude
 - But I use Objective-C Language coding.
 
 
-## 2、
+## 2、CollectionView Layout
 
 - Thanks you [chiahsien](https://github.com/chiahsien) create [CHTCollectionViewWaterfallLayout](https://github.com/chiahsien/CHTCollectionViewWaterfallLayout).
 
