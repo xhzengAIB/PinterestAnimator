@@ -6,7 +6,7 @@ PinterestAnimator like Pinterest 3.0++ App transition animation.
 ##TODO
 
 - [] Makes the program more easy to learn.
-- [] Use the MVC design pattern.
+- [x] Use the MVC design pattern.
 - [] Implement transitions animattor.
 
 
