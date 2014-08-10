@@ -14,7 +14,7 @@ PinterestAnimator like Pinterest 3.0++ App transition animation.
 Gratitude
 =================
 ## 1、
-Thanks you [demon1105](https://github.com/demon1105) [PinterestSwift](https://github.com/demon1105/PinterestSwift).
+Thanks you [demon1105](https://github.com/demon1105) create [PinterestSwift](https://github.com/demon1105/PinterestSwift).
 This open source Reference [PinterestSwift](https://github.com/demon1105/PinterestSwift) code and ideas.
 
 But I use Objective-C Language coding.
