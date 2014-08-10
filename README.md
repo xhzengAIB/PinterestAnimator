@@ -16,8 +16,7 @@ Gratitude
 ## 1、
 
 Thanks you [demon1105](https://github.com/demon1105) create [PinterestSwift](https://github.com/demon1105/PinterestSwift).                                
-My open source Reference [PinterestSwift](https://github.com/demon1105/PinterestSwift) code and ideas.                    
-Base on [PinterestSwift](https://github.com/demon1105/PinterestSwift).                    
+My open source base on and reference [PinterestSwift](https://github.com/demon1105/PinterestSwift) code and ideas.        
 But I use Objective-C Language coding.
 
 
