@@ -37,6 +37,13 @@
     if (!_backgroundImageView) {
         _backgroundImageView = [[UIImageView alloc] initWithFrame:self.bounds];
         _backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:_backgroundImageView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(5, 5)];
+        
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = _backgroundImageView.bounds;
+        maskLayer.path = maskPath.CGPath;
+        _backgroundImageView.layer.mask = maskLayer;
     }
     return _backgroundImageView;
 }
@@ -72,13 +79,6 @@
     if (self) {
         // Initialization code
         [self addSubview:self.backgroundImageView];
-        
-        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(5, 5)];
-        
-        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-        maskLayer.frame = self.backgroundImageView.bounds;
-        maskLayer.path = maskPath.CGPath;
-        self.backgroundImageView.layer.mask = maskLayer;
         
         [self.backgroundImageView addSubview:self.imageView];
     }
