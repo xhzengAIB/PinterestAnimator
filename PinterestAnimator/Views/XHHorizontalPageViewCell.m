@@ -70,7 +70,7 @@
 - (NSMutableArray *)items {
     if (!_items) {
         _items = [NSMutableArray array];
-        for (NSInteger i = 0; i < XH_CELL_COUNT; i++) {
+        for (NSInteger i = 1; i < XH_CELL_COUNT; i++) {
             XHPinterest *pinterest = [[XHPinterest alloc] initWithImageName:[NSString stringWithFormat:@"l%ld.jpg", (long)i]
                                                                       title:[NSString stringWithFormat:@"Title : %ld", (long)i]];
             [_items addObject:pinterest];

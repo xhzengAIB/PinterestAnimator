@@ -19,7 +19,7 @@
 
 #define XH_CELL_IDENTIFIER @"XHWaterfallCell"
 
-#define XH_CELL_COUNT 20
+#define XH_CELL_COUNT 10
 
 
 // device verson float value
