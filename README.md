@@ -8,7 +8,7 @@ PinterestAnimator like Pinterest 3.0++ App transition animation.
 
 ## 组件要求                                        Requirements
 
-* iOS 6.0+ /  xcode 5.1 or later.
+* iOS 7.0+ /  xcode 5.1 or later.
 * ARC
 
 ##TODO
