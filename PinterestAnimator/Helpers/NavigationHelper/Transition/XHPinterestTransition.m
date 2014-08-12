@@ -15,6 +15,11 @@
 
 @interface XHPinterestTransition ()
 
+/**
+ *  缩放参数
+ */
+@property (nonatomic, assign) CGFloat animationScale;
+
 @end
 
 @implementation XHPinterestTransition
@@ -22,7 +27,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.animationScale = (CGRectGetWidth(kXHScreen) / KXHGridItemWidth);
+        self.animationScale = ((CGRectGetWidth(kXHScreen) - kXHLargeGridItemPadding * 2) / KXHGridItemWidth);
         self.animationDuration = 0.3;
     }
     return self;
@@ -37,7 +42,7 @@
     UIView *containerView = [transitionContext containerView];
     
     
-    if (self.presenting) {
+    if (self.operation == UINavigationControllerOperationPop) {
         UIView *toView = toViewController.view;
         
         [containerView addSubview:toView];
@@ -70,7 +75,7 @@
         CGFloat pullOffsetY = [(UIViewController <XHHorizontalPageViewControllerProtocol> *)fromViewController pageViewCellScrollViewContentOffset].y;
         
         CGFloat offsetY = fromViewController.navigationController.navigationBarHidden ? 0.0 : 64;
-        [snapShot setOrigin:CGPointMake(0, -pullOffsetY+offsetY)];
+        [snapShot setOrigin:CGPointMake(kXHLargeGridItemPadding, -pullOffsetY+offsetY + kXHLargeGridItemPadding)];
         
         [containerView addSubview:snapShot];
         
@@ -107,8 +112,8 @@
             }
 
         }];
-    } else {
         
+    } else if (self.operation == UINavigationControllerOperationPush) {
         
         UIView *fromView = fromViewController.view;
         UIView *toView = toViewController.view;
@@ -129,7 +134,7 @@
         pageView.hidden = YES;
         
         [pageView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:NO];
-
+        
         CGFloat offsetY  = fromViewController.navigationController.navigationBarHidden ? 0.0 : 64;
         
         
@@ -141,9 +146,11 @@
         
         CGFloat animationScale = [self animationScale];
         [UIView animateWithDuration:[self animationDuration] animations:^{
+            
             snapShot.transform = CGAffineTransformMakeScale(animationScale,
                                                             animationScale);
-            [snapShot setOrigin:CGPointMake(0, offsetY)];
+            
+            [snapShot setOrigin:CGPointMake(kXHLargeGridItemPadding, offsetY + kXHLargeGridItemPadding)];
             
             fromView.alpha = 0;
             fromView.transform = snapShot.transform;

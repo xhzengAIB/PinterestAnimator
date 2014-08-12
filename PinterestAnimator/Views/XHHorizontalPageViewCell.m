@@ -15,6 +15,8 @@
 #import "XHUIKitMacro.h"
 #import "XHWaterfallContainerView.h"
 
+#import "XHPinterest.h"
+
 #define kXHContainerViewIdentifier @"XHContainerViewIdentifier"
 
 @interface XHContainerView : UICollectionReusableView
@@ -25,11 +27,11 @@
 
 @implementation XHContainerView
 
-#pragma - Propertys
+#pragma mark - Propertys
 
 - (XHWaterfallContainerView *)waterfallContainerView {
-    if (!_waterfallContainerView){
-        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:CGRectMake(5, 5, CGRectGetWidth(self.bounds) - 10, CGRectGetHeight(self.bounds) - 10)];
+    if (!_waterfallContainerView) {
+        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:CGRectMake(kXHLargeGridItemPadding, kXHLargeGridItemPadding, CGRectGetWidth(self.bounds) - kXHLargeGridItemPadding * 2, CGRectGetHeight(self.bounds) - kXHLargeGridItemPadding * 2)];
     }
     return _waterfallContainerView;
 }
@@ -44,7 +46,6 @@
     return self;
 }
 
-
 @end
 
 @interface XHHorizontalPageViewCell () <CHTCollectionViewDelegateWaterfallLayout, UICollectionViewDelegate, UICollectionViewDataSource>
@@ -57,9 +58,11 @@
 
 @implementation XHHorizontalPageViewCell
 
-- (void)setImage:(UIImage *)image {
-    _image = image;
-    CGFloat imageHeight = image.size.height * kXHScreenWidth / image.size.width;
+#pragma mark - Propertys
+
+- (void)setPinterest:(XHPinterest *)pinterest {
+    _pinterest = pinterest;
+    CGFloat imageHeight = pinterest.image.size.height * kXHScreenWidth / pinterest.image.size.width;
     self.layout.headerHeight = imageHeight;
     [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:0]];
 }
@@ -67,8 +70,10 @@
 - (NSMutableArray *)items {
     if (!_items) {
         _items = [NSMutableArray array];
-        for (NSInteger i = 0; i < CELL_COUNT; i++) {
-            [_items addObject:[NSString stringWithFormat:@"%ld.jpg", (long)i]];
+        for (NSInteger i = 0; i < XH_CELL_COUNT; i++) {
+            XHPinterest *pinterest = [[XHPinterest alloc] initWithImageName:[NSString stringWithFormat:@"l%ld.jpg", (long)i]
+                                                                      title:[NSString stringWithFormat:@"Title : %ld", (long)i]];
+            [_items addObject:pinterest];
         }
     }
     return _items;
@@ -88,14 +93,14 @@
         _collectionView.delegate = self;
         _collectionView.backgroundColor = [UIColor whiteColor];
         [_collectionView registerClass:[XHWaterfallCollectionViewCell class]
-            forCellWithReuseIdentifier:CELL_IDENTIFIER];
+            forCellWithReuseIdentifier:XH_CELL_IDENTIFIER];
         
         [_collectionView registerClass:[XHContainerView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader withReuseIdentifier:kXHContainerViewIdentifier];
     }
     return _collectionView;
 }
 
-#pragma mark - Life Cycl
+#pragma mark - Life Cycle
 
 - (instancetype)initWithFrame:(CGRect)frameRect {
     self = [super initWithFrame:frameRect];
@@ -106,10 +111,6 @@
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-}
-
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
     if (-scrollView.contentOffset.y > 64) {
         if (self.pullDownAction) {
@@ -118,7 +119,7 @@
     }
 }
 
-#pragma mark - UICollectionViewDataSource
+#pragma mark - UICollectionView DataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.items.count;
@@ -130,9 +131,9 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     XHWaterfallCollectionViewCell *cell =
-    (XHWaterfallCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CELL_IDENTIFIER
+    (XHWaterfallCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:XH_CELL_IDENTIFIER
                                                                      forIndexPath:indexPath];
-    cell.image = [UIImage imageNamed:self.items[indexPath.row]];
+    cell.pinterest = self.items[indexPath.row];
     return cell;
 }
 
@@ -143,7 +144,7 @@
         reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                           withReuseIdentifier:kXHContainerViewIdentifier
                                                                  forIndexPath:indexPath];
-        ((XHContainerView *)reusableView).waterfallContainerView.imageView.image = self.image;
+        ((XHContainerView *)reusableView).waterfallContainerView.displayPinterest = self.pinterest;
     }
     
     return reusableView;
@@ -158,8 +159,9 @@
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UIImage *image = [UIImage imageNamed:self.items[indexPath.row]];
-    CGFloat imageHeight = image.size.height * KXHGridItemWidth / image.size.width;
+    
+    XHPinterest *currentPinterest = self.items[indexPath.row];
+    CGFloat imageHeight = currentPinterest.image.size.height * KXHGridItemWidth / currentPinterest.image.size.width;
     return CGSizeMake(KXHGridItemWidth, imageHeight);
 }
 

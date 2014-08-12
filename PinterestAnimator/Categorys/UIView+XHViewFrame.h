@@ -10,6 +10,13 @@
 
 @interface UIView (XHViewFrame)
 
+/**
+ *  设置View的位置
+ *
+ *  @param origin 目标位置
+ */
 - (void)setOrigin:(CGPoint)origin;
+
+- (void)setTransFrame:(CGRect)frame;
 
 @end

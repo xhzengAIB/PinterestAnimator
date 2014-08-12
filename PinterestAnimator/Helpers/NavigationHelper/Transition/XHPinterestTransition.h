@@ -11,10 +11,14 @@
 
 @interface XHPinterestTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
+/**
+ *  动画参数
+ */
 @property (nonatomic, assign) NSTimeInterval animationDuration;
 
-@property (nonatomic, assign) CGFloat animationScale;
-
-@property (nonatomic, assign) BOOL presenting;
+/**
+ *  用于标记push或者pop
+ */
+@property (nonatomic, assign) UINavigationControllerOperation operation;
 
 @end

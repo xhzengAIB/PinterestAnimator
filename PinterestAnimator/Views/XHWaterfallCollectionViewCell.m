@@ -19,9 +19,9 @@
 
 #pragma mark - Propertys
 
-- (void)setImage:(UIImage *)image {
-    _image = image;
-    self.waterfallContainerView.imageView.image = image;
+- (void)setPinterest:(XHPinterest *)pinterest {
+    _pinterest = pinterest;
+    self.waterfallContainerView.displayPinterest = pinterest;
 }
 
 - (XHWaterfallContainerView *)waterfallContainerView {
@@ -42,9 +42,11 @@
     return self;
 }
 
+#pragma mark - XHTansitionWaterfallGridViewProtocol
+
 - (UIView *)snapShotForTransition {
     XHWaterfallContainerView *snapShotView = [[XHWaterfallContainerView alloc] initWithFrame:self.waterfallContainerView.frame];
-    snapShotView.imageView.image = self.waterfallContainerView.imageView.image;
+    snapShotView.displayPinterest = self.waterfallContainerView.displayPinterest;
     return snapShotView;
 }
 

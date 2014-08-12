@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "XHTransitionProtocol.h"
 
+@class XHPinterest;
+
 @interface XHWaterfallCollectionViewCell : UICollectionViewCell <XHTansitionWaterfallGridViewProtocol>
 
-@property (nonatomic, strong) UIImage *image;
+/**
+ *  需要展示和绑定的数据Model
+ */
+@property (nonatomic, strong) XHPinterest *pinterest;
 
 @end

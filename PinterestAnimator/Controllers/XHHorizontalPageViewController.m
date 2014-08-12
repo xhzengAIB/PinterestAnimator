@@ -66,13 +66,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     [self.view addSubview:self.collectionView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    
 }
 
 #pragma mark - XHTransitionProtocol
@@ -93,13 +96,14 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     XHHorizontalPageViewCell *collectionCell = (XHHorizontalPageViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:kXHHorizontalPageViewCellIdentify forIndexPath:indexPath];
-    collectionCell.image = [UIImage imageNamed:self.items[indexPath.row]];
-    collectionCell.didSelectedSubItemAction = ^(NSString *imageName) {
+    collectionCell.pinterest = self.items[indexPath.row];
+    collectionCell.didSelectedSubItemAction = ^(XHPinterest *currentPinterest) {
         
     };
+    __weak typeof(self) weakSelf = self;
     collectionCell.pullDownAction = ^(CGPoint offset) {
-        self.pullOffset = offset;
-        [self.navigationController popToRootViewControllerAnimated:YES];
+        weakSelf.pullOffset = offset;
+        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
     };
     [collectionCell setNeedsDisplay];
     return collectionCell;

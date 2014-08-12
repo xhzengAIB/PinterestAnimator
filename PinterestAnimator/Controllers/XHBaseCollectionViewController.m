@@ -11,6 +11,7 @@
 #import "CHTCollectionViewWaterfallLayout.h"
 #import "XHWaterfallCollectionViewCell.h"
 
+#import "XHPinterest.h"
 
 @interface XHBaseCollectionViewController () <CHTCollectionViewDelegateWaterfallLayout>
 
@@ -34,7 +35,7 @@
         _collectionView.delegate = self;
         _collectionView.backgroundColor = [UIColor whiteColor];
         [_collectionView registerClass:[XHWaterfallCollectionViewCell class]
-            forCellWithReuseIdentifier:CELL_IDENTIFIER];
+            forCellWithReuseIdentifier:XH_CELL_IDENTIFIER];
     }
     return _collectionView;
 }
@@ -42,8 +43,10 @@
 - (NSMutableArray *)items {
     if (!_items) {
         _items = [NSMutableArray array];
-        for (NSInteger i = 0; i < CELL_COUNT; i++) {
-            [_items addObject:[NSString stringWithFormat:@"%ld.jpg", (long)i]];
+        for (NSInteger i = 0; i < XH_CELL_COUNT; i++) {
+            XHPinterest *pinterest = [[XHPinterest alloc] initWithImageName:[NSString stringWithFormat:@"l%ld.jpg", (long)i]
+                                                                      title:[NSString stringWithFormat:@"Jack is cool man : %ld", (long)i]];
+            [_items addObject:pinterest];
         }
     }
     return _items;
@@ -54,7 +57,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     [self.view addSubview:self.collectionView];
 }
 
@@ -85,7 +87,7 @@
     layout.columnCount = UIInterfaceOrientationIsPortrait(orientation) ? 2 : 3;
 }
 
-#pragma mark - UICollectionViewDataSource
+#pragma mark - UICollectionView DataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.items.count;
@@ -93,17 +95,18 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     XHWaterfallCollectionViewCell *cell =
-    (XHWaterfallCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CELL_IDENTIFIER
+    (XHWaterfallCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:XH_CELL_IDENTIFIER
                                                                                 forIndexPath:indexPath];
-    cell.image = [UIImage imageNamed:self.items[indexPath.row]];
+    cell.pinterest = self.items[indexPath.row];
     return cell;
 }
 
 #pragma mark - CHTCollectionViewDelegateWaterfallLayout
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UIImage *image = [UIImage imageNamed:self.items[indexPath.row]];
-    CGFloat imageHeight = image.size.height * KXHGridItemWidth / image.size.width;
+    
+    XHPinterest *currentPinterest = self.items[indexPath.row];
+    CGFloat imageHeight = currentPinterest.image.size.height * KXHGridItemWidth / currentPinterest.image.size.width;
     return CGSizeMake(KXHGridItemWidth, imageHeight);
 }
 

@@ -16,7 +16,7 @@
                                                 fromViewController:(UIViewController *)fromVC
                                                   toViewController:(UIViewController *)toVC {
     XHPinterestTransition *pinterestTransition = [[XHPinterestTransition alloc] init];
-    pinterestTransition.presenting = operation == UINavigationControllerOperationPop;
+    pinterestTransition.operation = operation;
     return pinterestTransition;
 }
 

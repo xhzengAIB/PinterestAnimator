@@ -31,7 +31,6 @@
 #pragma mark - Pop Helper Method
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
-    //viewWillAppearWithPageIndex
     
     NSInteger childrenCount = self.viewControllers.count;
     

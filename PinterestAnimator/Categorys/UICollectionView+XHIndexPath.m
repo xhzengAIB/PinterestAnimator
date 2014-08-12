@@ -13,9 +13,11 @@ static NSString * const kXHIndexPathKey = @"XHIndexPathKey";
 
 @implementation UICollectionView (XHIndexPath)
 
+
 - (void)setCurrentIndexPath:(NSIndexPath *)indexPath {
     objc_setAssociatedObject(self, &kXHIndexPathKey, indexPath, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+
 
 - (NSIndexPath *)currentIndexPath {
     NSInteger index = self.contentOffset.x / self.frame.size.width;

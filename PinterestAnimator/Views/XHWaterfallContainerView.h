@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class XHPinterest;
+
 @interface XHWaterfallContainerView : UIView
 
-@property (nonatomic, strong) UIImageView *imageView;
+/**
+ *  需要展示和绑定的数据Model
+ */
+@property (nonatomic, strong) XHPinterest *displayPinterest;
 
 @end

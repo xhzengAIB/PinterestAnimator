@@ -8,16 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^PullDownAction)(CGPoint offset);
+@class XHPinterest;
 
-typedef void(^DidSelectedSubItemAction)(NSString *imageName);
+typedef void(^XHPullDownAction)(CGPoint offset);
+
+typedef void(^XHDidSelectedSubItemAction)(XHPinterest *currentPinterest);
 
 @interface XHHorizontalPageViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) UIImage *image;
+/**
+ *  需要展示和绑定的数据Model
+ */
+@property (nonatomic, strong) XHPinterest *pinterest;
 
-@property (nonatomic, copy) PullDownAction pullDownAction;
+/**
+ *  详情页面，下拉scrollView到一定程度的回调
+ */
+@property (nonatomic, copy) XHPullDownAction pullDownAction;
 
-@property (nonatomic, copy) DidSelectedSubItemAction didSelectedSubItemAction;
+/**
+ *  点击详情页面的其他item的回调
+ */
+@property (nonatomic, copy) XHDidSelectedSubItemAction didSelectedSubItemAction;
 
 @end

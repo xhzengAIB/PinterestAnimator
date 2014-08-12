@@ -16,4 +16,9 @@
     self.frame = frame;
 }
 
+- (void)setTransFrame:(CGRect)frame {
+    frame.size.width -= frame.origin.x;
+    frame.size.height -= frame.origin.y;
+}
+
 @end

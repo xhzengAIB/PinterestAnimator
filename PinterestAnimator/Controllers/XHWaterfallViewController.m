@@ -11,6 +11,8 @@
 
 #import "XHHorizontalPageViewController.h"
 
+#import "XHPinterest.h"
+
 @interface XHWaterfallViewController ()
 
 @property (nonatomic, strong) XHNavigationControllerDelegate *navigationControllerDelegate;
@@ -33,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"Pinterest";
     self.navigationController.delegate = self.navigationControllerDelegate;
 }
 
@@ -45,8 +48,8 @@
 
 - (void)viewWillAppearWithPageIndex:(NSInteger)pageIndex {
     UICollectionViewScrollPosition position = UICollectionViewScrollPositionCenteredVertically & UICollectionViewScrollPositionCenteredHorizontally;
-    UIImage *image = [UIImage imageNamed:self.items[pageIndex]];
-    CGFloat imageHeight = image.size.height * KXHGridItemWidth / image.size.width;
+    XHPinterest *pinterest = self.items[pageIndex];
+    CGFloat imageHeight = pinterest.image.size.height * KXHGridItemWidth / pinterest.image.size.width;
     if (imageHeight > 400) {
         position = UICollectionViewScrollPositionTop;
     }

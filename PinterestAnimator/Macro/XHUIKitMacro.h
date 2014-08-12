@@ -12,11 +12,14 @@
 
 #define KXHGridItemWidth 145.0
 
+#define kXHLargeGridItemPadding 10
+
 #define kXHScreen [[UIScreen mainScreen] bounds]
 #define kXHScreenWidth CGRectGetWidth(kXHScreen)
 
-#define CELL_IDENTIFIER @"WaterfallCell"
-#define CELL_COUNT 14
+#define XH_CELL_IDENTIFIER @"XHWaterfallCell"
+
+#define XH_CELL_COUNT 20
 
 
 // device verson float value
