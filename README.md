@@ -8,8 +8,19 @@ PinterestAnimator like Pinterest 3.0++ App transition animation.
 
 ## 组件要求                                        Requirements
 
-* iOS 7.0+ /  xcode 5.1 or later.
+* iOS 6.0+ /  xcode 5.1 or later.
 * ARC
+
+## Podfile
+
+[CocosPods](http://cocosPods.org) is the recommended method to install PinterestAnimator, just add the following line to `Podfile`
+
+```
+pod 'PinterestAnimator'
+```
+
+and run `pod install`, then you're all done!
+
 
 ##TODO
 
@@ -17,6 +28,12 @@ PinterestAnimator like Pinterest 3.0++ App transition animation.
 - [x] Use the MVC design pattern.
 - [x] Implement transitions animattor.
 
+
+## License
+
+中文: PinterestAnimator 是在GPUv3协议下使用的，可以在LICENSE文件里面找到相关的使用协议信息。
+
+English: PinterestAnimator is available under the GPUv3 license, see the LICENSE file for more information.     
 
 
 Gratitude
