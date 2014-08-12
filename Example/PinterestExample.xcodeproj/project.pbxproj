@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D096EF81999B28C00C492A6 /* UICollectionView+XHIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096ED71999B28C00C492A6 /* UICollectionView+XHIndexPath.m */; };
+		7D096EF91999B28C00C492A6 /* UIView+XHViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096ED91999B28C00C492A6 /* UIView+XHViewFrame.m */; };
+		7D096EFA1999B28C00C492A6 /* XHPinterestTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EE01999B28C00C492A6 /* XHPinterestTransition.m */; };
+		7D096EFB1999B28C00C492A6 /* XHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EE21999B28C00C492A6 /* XHNavigationControllerDelegate.m */; };
+		7D096EFC1999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EE51999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m */; };
+		7D096F011999B28C00C492A6 /* XHHorizontalPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EF31999B28C00C492A6 /* XHHorizontalPageViewCell.m */; };
+		7D096F021999B28C00C492A6 /* XHWaterfallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EF51999B28C00C492A6 /* XHWaterfallCollectionViewCell.m */; };
+		7D096F031999B28C00C492A6 /* XHWaterfallContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EF71999B28C00C492A6 /* XHWaterfallContainerView.m */; };
+		7D096F0D1999B2A900C492A6 /* XHBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096F061999B2A900C492A6 /* XHBaseCollectionViewController.m */; };
+		7D096F0E1999B2A900C492A6 /* XHHorizontalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096F081999B2A900C492A6 /* XHHorizontalPageViewController.m */; };
+		7D096F0F1999B2A900C492A6 /* XHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096F0A1999B2A900C492A6 /* XHNavigationController.m */; };
+		7D096F101999B2A900C492A6 /* XHWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096F0C1999B2A900C492A6 /* XHWaterfallViewController.m */; };
 		7D0DFE681981138100E9178E /* NewsBackgroundImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D0DFE671981138100E9178E /* NewsBackgroundImage@2x.png */; };
-		7D0DFEB319823B6700E9178E /* UICollectionView+XHIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFE9219823B6700E9178E /* UICollectionView+XHIndexPath.m */; };
-		7D0DFEB419823B6700E9178E /* UIView+XHViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFE9419823B6700E9178E /* UIView+XHViewFrame.m */; };
-		7D0DFEB519823B6700E9178E /* XHPinterestTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFE9B19823B6700E9178E /* XHPinterestTransition.m */; };
-		7D0DFEB619823B6700E9178E /* XHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFE9D19823B6700E9178E /* XHNavigationControllerDelegate.m */; };
-		7D0DFEB719823B6700E9178E /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEA019823B6700E9178E /* CHTCollectionViewWaterfallLayout.m */; };
-		7D0DFEB819823B6700E9178E /* XHBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEA519823B6700E9178E /* XHBaseCollectionViewController.m */; };
-		7D0DFEB919823B6700E9178E /* XHHorizontalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEA719823B6700E9178E /* XHHorizontalPageViewController.m */; };
-		7D0DFEBA19823B6700E9178E /* XHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEA919823B6700E9178E /* XHNavigationController.m */; };
-		7D0DFEBB19823B6700E9178E /* XHHorizontalPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEAC19823B6700E9178E /* XHHorizontalPageViewCell.m */; };
-		7D0DFEBC19823B6700E9178E /* XHWaterfallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEAE19823B6700E9178E /* XHWaterfallCollectionViewCell.m */; };
-		7D0DFEBD19823B6700E9178E /* XHWaterfallContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEB019823B6700E9178E /* XHWaterfallContainerView.m */; };
 		7D18DC54197F61A7005059A3 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D18DC46197F61A7005059A3 /* 0.jpg */; };
 		7D18DC55197F61A7005059A3 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D18DC47197F61A7005059A3 /* 1.jpg */; };
 		7D18DC56197F61A7005059A3 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D18DC48197F61A7005059A3 /* 10.jpg */; };
@@ -37,7 +38,6 @@
 		7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6257001973883D005D8CB7 /* AppDelegate.m */; };
 		7D6257031973883D005D8CB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6257021973883D005D8CB7 /* Images.xcassets */; };
 		7D62570F1973883D005D8CB7 /* PinterestExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */; };
-		7DE7C4701989DF3C0089AFFC /* XHWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7C46F1989DF3C0089AFFC /* XHWaterfallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,31 +51,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D096ED61999B28C00C492A6 /* UICollectionView+XHIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XHIndexPath.h"; sourceTree = "<group>"; };
+		7D096ED71999B28C00C492A6 /* UICollectionView+XHIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XHIndexPath.m"; sourceTree = "<group>"; };
+		7D096ED81999B28C00C492A6 /* UIView+XHViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XHViewFrame.h"; sourceTree = "<group>"; };
+		7D096ED91999B28C00C492A6 /* UIView+XHViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XHViewFrame.m"; sourceTree = "<group>"; };
+		7D096EDE1999B28C00C492A6 /* XHTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTransitionProtocol.h; sourceTree = "<group>"; };
+		7D096EDF1999B28C00C492A6 /* XHPinterestTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestTransition.h; sourceTree = "<group>"; };
+		7D096EE01999B28C00C492A6 /* XHPinterestTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestTransition.m; sourceTree = "<group>"; };
+		7D096EE11999B28C00C492A6 /* XHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNavigationControllerDelegate.h; sourceTree = "<group>"; };
+		7D096EE21999B28C00C492A6 /* XHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNavigationControllerDelegate.m; sourceTree = "<group>"; };
+		7D096EE41999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		7D096EE51999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		7D096EE71999B28C00C492A6 /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
+		7D096EF21999B28C00C492A6 /* XHHorizontalPageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHHorizontalPageViewCell.h; sourceTree = "<group>"; };
+		7D096EF31999B28C00C492A6 /* XHHorizontalPageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHHorizontalPageViewCell.m; sourceTree = "<group>"; };
+		7D096EF41999B28C00C492A6 /* XHWaterfallCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallCollectionViewCell.h; sourceTree = "<group>"; };
+		7D096EF51999B28C00C492A6 /* XHWaterfallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallCollectionViewCell.m; sourceTree = "<group>"; };
+		7D096EF61999B28C00C492A6 /* XHWaterfallContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallContainerView.h; sourceTree = "<group>"; };
+		7D096EF71999B28C00C492A6 /* XHWaterfallContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallContainerView.m; sourceTree = "<group>"; };
+		7D096F051999B2A900C492A6 /* XHBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseCollectionViewController.h; sourceTree = "<group>"; };
+		7D096F061999B2A900C492A6 /* XHBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseCollectionViewController.m; sourceTree = "<group>"; };
+		7D096F071999B2A900C492A6 /* XHHorizontalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHHorizontalPageViewController.h; sourceTree = "<group>"; };
+		7D096F081999B2A900C492A6 /* XHHorizontalPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHHorizontalPageViewController.m; sourceTree = "<group>"; };
+		7D096F091999B2A900C492A6 /* XHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNavigationController.h; sourceTree = "<group>"; };
+		7D096F0A1999B2A900C492A6 /* XHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNavigationController.m; sourceTree = "<group>"; };
+		7D096F0B1999B2A900C492A6 /* XHWaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallViewController.h; sourceTree = "<group>"; };
+		7D096F0C1999B2A900C492A6 /* XHWaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallViewController.m; sourceTree = "<group>"; };
 		7D0DFE671981138100E9178E /* NewsBackgroundImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewsBackgroundImage@2x.png"; sourceTree = "<group>"; };
-		7D0DFE9119823B6700E9178E /* UICollectionView+XHIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+XHIndexPath.h"; sourceTree = "<group>"; };
-		7D0DFE9219823B6700E9178E /* UICollectionView+XHIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+XHIndexPath.m"; sourceTree = "<group>"; };
-		7D0DFE9319823B6700E9178E /* UIView+XHViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XHViewFrame.h"; sourceTree = "<group>"; };
-		7D0DFE9419823B6700E9178E /* UIView+XHViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XHViewFrame.m"; sourceTree = "<group>"; };
-		7D0DFE9919823B6700E9178E /* XHTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTransitionProtocol.h; sourceTree = "<group>"; };
-		7D0DFE9A19823B6700E9178E /* XHPinterestTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestTransition.h; sourceTree = "<group>"; };
-		7D0DFE9B19823B6700E9178E /* XHPinterestTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestTransition.m; sourceTree = "<group>"; };
-		7D0DFE9C19823B6700E9178E /* XHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNavigationControllerDelegate.h; sourceTree = "<group>"; };
-		7D0DFE9D19823B6700E9178E /* XHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNavigationControllerDelegate.m; sourceTree = "<group>"; };
-		7D0DFE9F19823B6700E9178E /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
-		7D0DFEA019823B6700E9178E /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
-		7D0DFEA219823B6700E9178E /* XHUIKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKitMacro.h; sourceTree = "<group>"; };
-		7D0DFEA419823B6700E9178E /* XHBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBaseCollectionViewController.h; sourceTree = "<group>"; };
-		7D0DFEA519823B6700E9178E /* XHBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBaseCollectionViewController.m; sourceTree = "<group>"; };
-		7D0DFEA619823B6700E9178E /* XHHorizontalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHHorizontalPageViewController.h; sourceTree = "<group>"; };
-		7D0DFEA719823B6700E9178E /* XHHorizontalPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHHorizontalPageViewController.m; sourceTree = "<group>"; };
-		7D0DFEA819823B6700E9178E /* XHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNavigationController.h; sourceTree = "<group>"; };
-		7D0DFEA919823B6700E9178E /* XHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNavigationController.m; sourceTree = "<group>"; };
-		7D0DFEAB19823B6700E9178E /* XHHorizontalPageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHHorizontalPageViewCell.h; sourceTree = "<group>"; };
-		7D0DFEAC19823B6700E9178E /* XHHorizontalPageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHHorizontalPageViewCell.m; sourceTree = "<group>"; };
-		7D0DFEAD19823B6700E9178E /* XHWaterfallCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallCollectionViewCell.h; sourceTree = "<group>"; };
-		7D0DFEAE19823B6700E9178E /* XHWaterfallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallCollectionViewCell.m; sourceTree = "<group>"; };
-		7D0DFEAF19823B6700E9178E /* XHWaterfallContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallContainerView.h; sourceTree = "<group>"; };
-		7D0DFEB019823B6700E9178E /* XHWaterfallContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallContainerView.m; sourceTree = "<group>"; };
 		7D18DC46197F61A7005059A3 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		7D18DC47197F61A7005059A3 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		7D18DC48197F61A7005059A3 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
@@ -99,8 +101,6 @@
 		7D6257081973883D005D8CB7 /* PinterestExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D62570D1973883D005D8CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinterestExampleTests.m; sourceTree = "<group>"; };
-		7DE7C46E1989DF3C0089AFFC /* XHWaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallViewController.h; sourceTree = "<group>"; };
-		7DE7C46F1989DF3C0089AFFC /* XHWaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,110 +121,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7D0DFE8F19823B6700E9178E /* Pinterest */ = {
+		7D096ED41999B28C00C492A6 /* PinterestAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9019823B6700E9178E /* Categorys */,
-				7D0DFE9519823B6700E9178E /* Helpers */,
-				7D0DFE9E19823B6700E9178E /* Layout */,
-				7D0DFEA119823B6700E9178E /* Macro */,
-				7D0DFEAA19823B6700E9178E /* Views */,
-				7D0DFEA319823B6700E9178E /* ViewControllers */,
+				7D096ED51999B28C00C492A6 /* Categorys */,
+				7D096EDA1999B28C00C492A6 /* Helpers */,
+				7D096EE31999B28C00C492A6 /* Layout */,
+				7D096EE61999B28C00C492A6 /* Macro */,
+				7D096EF11999B28C00C492A6 /* Views */,
+				7D096F041999B2A900C492A6 /* Controllers */,
 			);
-			name = Pinterest;
-			path = ../Pinterest;
+			name = PinterestAnimator;
+			path = ../PinterestAnimator;
 			sourceTree = "<group>";
 		};
-		7D0DFE9019823B6700E9178E /* Categorys */ = {
+		7D096ED51999B28C00C492A6 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9119823B6700E9178E /* UICollectionView+XHIndexPath.h */,
-				7D0DFE9219823B6700E9178E /* UICollectionView+XHIndexPath.m */,
-				7D0DFE9319823B6700E9178E /* UIView+XHViewFrame.h */,
-				7D0DFE9419823B6700E9178E /* UIView+XHViewFrame.m */,
+				7D096ED61999B28C00C492A6 /* UICollectionView+XHIndexPath.h */,
+				7D096ED71999B28C00C492A6 /* UICollectionView+XHIndexPath.m */,
+				7D096ED81999B28C00C492A6 /* UIView+XHViewFrame.h */,
+				7D096ED91999B28C00C492A6 /* UIView+XHViewFrame.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
 		};
-		7D0DFE9519823B6700E9178E /* Helpers */ = {
+		7D096EDA1999B28C00C492A6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9619823B6700E9178E /* NavigationHelper */,
+				7D096EDB1999B28C00C492A6 /* NavigationHelper */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		7D0DFE9619823B6700E9178E /* NavigationHelper */ = {
+		7D096EDB1999B28C00C492A6 /* NavigationHelper */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9719823B6700E9178E /* Transition */,
-				7D0DFE9C19823B6700E9178E /* XHNavigationControllerDelegate.h */,
-				7D0DFE9D19823B6700E9178E /* XHNavigationControllerDelegate.m */,
+				7D096EDC1999B28C00C492A6 /* Transition */,
+				7D096EE11999B28C00C492A6 /* XHNavigationControllerDelegate.h */,
+				7D096EE21999B28C00C492A6 /* XHNavigationControllerDelegate.m */,
 			);
 			path = NavigationHelper;
 			sourceTree = "<group>";
 		};
-		7D0DFE9719823B6700E9178E /* Transition */ = {
+		7D096EDC1999B28C00C492A6 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9819823B6700E9178E /* Protocal */,
-				7D0DFE9A19823B6700E9178E /* XHPinterestTransition.h */,
-				7D0DFE9B19823B6700E9178E /* XHPinterestTransition.m */,
+				7D096EDD1999B28C00C492A6 /* Protocal */,
+				7D096EDF1999B28C00C492A6 /* XHPinterestTransition.h */,
+				7D096EE01999B28C00C492A6 /* XHPinterestTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
 		};
-		7D0DFE9819823B6700E9178E /* Protocal */ = {
+		7D096EDD1999B28C00C492A6 /* Protocal */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9919823B6700E9178E /* XHTransitionProtocol.h */,
+				7D096EDE1999B28C00C492A6 /* XHTransitionProtocol.h */,
 			);
 			path = Protocal;
 			sourceTree = "<group>";
 		};
-		7D0DFE9E19823B6700E9178E /* Layout */ = {
+		7D096EE31999B28C00C492A6 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE9F19823B6700E9178E /* CHTCollectionViewWaterfallLayout.h */,
-				7D0DFEA019823B6700E9178E /* CHTCollectionViewWaterfallLayout.m */,
+				7D096EE41999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.h */,
+				7D096EE51999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
 		};
-		7D0DFEA119823B6700E9178E /* Macro */ = {
+		7D096EE61999B28C00C492A6 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFEA219823B6700E9178E /* XHUIKitMacro.h */,
+				7D096EE71999B28C00C492A6 /* XHUIKitMacro.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
 		};
-		7D0DFEA319823B6700E9178E /* ViewControllers */ = {
+		7D096EF11999B28C00C492A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				7D0DFEA419823B6700E9178E /* XHBaseCollectionViewController.h */,
-				7D0DFEA519823B6700E9178E /* XHBaseCollectionViewController.m */,
-				7DE7C46E1989DF3C0089AFFC /* XHWaterfallViewController.h */,
-				7DE7C46F1989DF3C0089AFFC /* XHWaterfallViewController.m */,
-				7D0DFEA619823B6700E9178E /* XHHorizontalPageViewController.h */,
-				7D0DFEA719823B6700E9178E /* XHHorizontalPageViewController.m */,
-				7D0DFEA819823B6700E9178E /* XHNavigationController.h */,
-				7D0DFEA919823B6700E9178E /* XHNavigationController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		7D0DFEAA19823B6700E9178E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7D0DFEAB19823B6700E9178E /* XHHorizontalPageViewCell.h */,
-				7D0DFEAC19823B6700E9178E /* XHHorizontalPageViewCell.m */,
-				7D0DFEAD19823B6700E9178E /* XHWaterfallCollectionViewCell.h */,
-				7D0DFEAE19823B6700E9178E /* XHWaterfallCollectionViewCell.m */,
-				7D0DFEAF19823B6700E9178E /* XHWaterfallContainerView.h */,
-				7D0DFEB019823B6700E9178E /* XHWaterfallContainerView.m */,
+				7D096EF21999B28C00C492A6 /* XHHorizontalPageViewCell.h */,
+				7D096EF31999B28C00C492A6 /* XHHorizontalPageViewCell.m */,
+				7D096EF41999B28C00C492A6 /* XHWaterfallCollectionViewCell.h */,
+				7D096EF51999B28C00C492A6 /* XHWaterfallCollectionViewCell.m */,
+				7D096EF61999B28C00C492A6 /* XHWaterfallContainerView.h */,
+				7D096EF71999B28C00C492A6 /* XHWaterfallContainerView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7D096F041999B2A900C492A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D096F051999B2A900C492A6 /* XHBaseCollectionViewController.h */,
+				7D096F061999B2A900C492A6 /* XHBaseCollectionViewController.m */,
+				7D096F071999B2A900C492A6 /* XHHorizontalPageViewController.h */,
+				7D096F081999B2A900C492A6 /* XHHorizontalPageViewController.m */,
+				7D096F091999B2A900C492A6 /* XHNavigationController.h */,
+				7D096F0A1999B2A900C492A6 /* XHNavigationController.m */,
+				7D096F0B1999B2A900C492A6 /* XHWaterfallViewController.h */,
+				7D096F0C1999B2A900C492A6 /* XHWaterfallViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		7D18DC45197F61A7005059A3 /* images */ = {
@@ -251,7 +251,7 @@
 		7D6256EF1973883D005D8CB7 = {
 			isa = PBXGroup;
 			children = (
-				7D0DFE8F19823B6700E9178E /* Pinterest */,
+				7D096ED41999B28C00C492A6 /* PinterestAnimator */,
 				7D6256FA1973883D005D8CB7 /* PinterestExample */,
 				7D62570B1973883D005D8CB7 /* PinterestExampleTests */,
 				7D6256F91973883D005D8CB7 /* Products */,
@@ -418,20 +418,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0DFEB319823B6700E9178E /* UICollectionView+XHIndexPath.m in Sources */,
-				7D0DFEBA19823B6700E9178E /* XHNavigationController.m in Sources */,
-				7D0DFEB419823B6700E9178E /* UIView+XHViewFrame.m in Sources */,
-				7DE7C4701989DF3C0089AFFC /* XHWaterfallViewController.m in Sources */,
-				7D0DFEB819823B6700E9178E /* XHBaseCollectionViewController.m in Sources */,
-				7D0DFEB919823B6700E9178E /* XHHorizontalPageViewController.m in Sources */,
-				7D0DFEB619823B6700E9178E /* XHNavigationControllerDelegate.m in Sources */,
-				7D0DFEB719823B6700E9178E /* CHTCollectionViewWaterfallLayout.m in Sources */,
-				7D0DFEBD19823B6700E9178E /* XHWaterfallContainerView.m in Sources */,
-				7D0DFEBC19823B6700E9178E /* XHWaterfallCollectionViewCell.m in Sources */,
-				7D0DFEB519823B6700E9178E /* XHPinterestTransition.m in Sources */,
+				7D096EF81999B28C00C492A6 /* UICollectionView+XHIndexPath.m in Sources */,
+				7D096EF91999B28C00C492A6 /* UIView+XHViewFrame.m in Sources */,
+				7D096F031999B28C00C492A6 /* XHWaterfallContainerView.m in Sources */,
+				7D096F101999B2A900C492A6 /* XHWaterfallViewController.m in Sources */,
+				7D096F021999B28C00C492A6 /* XHWaterfallCollectionViewCell.m in Sources */,
+				7D096EFB1999B28C00C492A6 /* XHNavigationControllerDelegate.m in Sources */,
+				7D096F0D1999B2A900C492A6 /* XHBaseCollectionViewController.m in Sources */,
+				7D096F0E1999B2A900C492A6 /* XHHorizontalPageViewController.m in Sources */,
+				7D096F011999B28C00C492A6 /* XHHorizontalPageViewCell.m in Sources */,
+				7D096EFC1999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				7D096EFA1999B28C00C492A6 /* XHPinterestTransition.m in Sources */,
 				7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */,
+				7D096F0F1999B2A900C492A6 /* XHNavigationController.m in Sources */,
 				7D6256FE1973883D005D8CB7 /* main.m in Sources */,
-				7D0DFEBB19823B6700E9178E /* XHHorizontalPageViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55529E71-1DC4-46D9-82FC-C509B4AF3A91</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PinterestExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3ECDC1A0-367E-4742-932C-11A3C81BD9B6</key>
+		<string>https://github.com/xhzengAIB/PinterestAnimator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/PinterestExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3ECDC1A0-367E-4742-932C-11A3C81BD9B6</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xhzengAIB/PinterestAnimator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3ECDC1A0-367E-4742-932C-11A3C81BD9B6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3ECDC1A0-367E-4742-932C-11A3C81BD9B6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PinterestAnimator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
