@@ -55,7 +55,7 @@
         _imageView.clipsToBounds = YES;
         _imageView.contentMode = UIViewContentModeScaleToFill;
         
-        [_imageView addSubview:self.titleLabel];
+//        [_imageView addSubview:self.titleLabel];
     }
     return _imageView;
 }

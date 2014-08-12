@@ -37,7 +37,7 @@
     UIViewController <XHTransitionProtocol, XHWaterFallViewControllerProtocol> *toViewController = (UIViewController <XHTransitionProtocol, XHWaterFallViewControllerProtocol> *)self.viewControllers[childrenCount - 2];
     UICollectionView *toView = [toViewController transitionCollectionView];
     
-    UIViewController *popedViewController = self.viewControllers[childrenCount-1];
+    UIViewController *popedViewController = self.viewControllers[childrenCount - 1];
     UICollectionView *popView  = [popedViewController valueForKey:@"collectionView"];
     NSIndexPath *indexPath = [popView currentIndexPath];
     [toViewController viewWillAppearWithPageIndex:indexPath.row];

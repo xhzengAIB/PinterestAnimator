@@ -88,6 +88,16 @@
     return self.collectionView;
 }
 
+#pragma mark - UIScrollView Delegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSInteger index = scrollView.contentOffset.x / scrollView.frame.size.width;
+    if (index == 0) {
+        self.indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        [self.collectionView setCurrentIndexPath:self.indexPath];
+    }
+}
+
 #pragma mark - UICollectionView DataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -103,7 +113,7 @@
     __weak typeof(self) weakSelf = self;
     collectionCell.pullDownAction = ^(CGPoint offset) {
         weakSelf.pullOffset = offset;
-        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
+        [weakSelf.navigationController popViewControllerAnimated:YES];
     };
     [collectionCell setNeedsDisplay];
     return collectionCell;

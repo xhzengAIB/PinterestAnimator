@@ -18,7 +18,6 @@ static NSString * const kXHIndexPathKey = @"XHIndexPathKey";
     objc_setAssociatedObject(self, &kXHIndexPathKey, indexPath, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-
 - (NSIndexPath *)currentIndexPath {
     NSInteger index = self.contentOffset.x / self.frame.size.width;
     

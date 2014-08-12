@@ -10,7 +10,7 @@
 @import Foundation;
 
 
-#define KXHGridItemWidth 145.0
+#define KXHGridItemWidth (145.0 * 1)
 
 #define kXHLargeGridItemPadding 10
 

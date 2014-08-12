@@ -56,7 +56,7 @@
         [waterFallView layoutIfNeeded];
         
         NSIndexPath *indexPath = pageView.currentIndexPath;
-
+        
         UIView <XHTansitionWaterfallGridViewProtocol> *gridView = (UIView <XHTansitionWaterfallGridViewProtocol> *)([waterFallView cellForItemAtIndexPath:indexPath]);
         
         [waterFallView performBatchUpdates:^{
