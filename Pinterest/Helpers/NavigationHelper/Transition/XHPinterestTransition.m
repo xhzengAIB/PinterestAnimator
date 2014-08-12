@@ -22,8 +22,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.animationScale = (CGRectGetWidth([[UIScreen mainScreen] bounds]) / KXHGridItemWidth);
-        self.animationDuration = 0.35;
+        self.animationScale = (CGRectGetWidth(kXHScreen) / KXHGridItemWidth);
+        self.animationDuration = 0.3;
     }
     return self;
 }

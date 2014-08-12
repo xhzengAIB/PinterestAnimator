@@ -19,7 +19,6 @@
 		7D0DFEBB19823B6700E9178E /* XHHorizontalPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEAC19823B6700E9178E /* XHHorizontalPageViewCell.m */; };
 		7D0DFEBC19823B6700E9178E /* XHWaterfallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEAE19823B6700E9178E /* XHWaterfallCollectionViewCell.m */; };
 		7D0DFEBD19823B6700E9178E /* XHWaterfallContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEB019823B6700E9178E /* XHWaterfallContainerView.m */; };
-		7D0DFEBE19823B6700E9178E /* XHWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0DFEB219823B6700E9178E /* XHWaterfallViewController.m */; };
 		7D18DC54197F61A7005059A3 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D18DC46197F61A7005059A3 /* 0.jpg */; };
 		7D18DC55197F61A7005059A3 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D18DC47197F61A7005059A3 /* 1.jpg */; };
 		7D18DC56197F61A7005059A3 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D18DC48197F61A7005059A3 /* 10.jpg */; };
@@ -38,6 +37,7 @@
 		7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6257001973883D005D8CB7 /* AppDelegate.m */; };
 		7D6257031973883D005D8CB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6257021973883D005D8CB7 /* Images.xcassets */; };
 		7D62570F1973883D005D8CB7 /* PinterestExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */; };
+		7DE7C4701989DF3C0089AFFC /* XHWaterfallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE7C46F1989DF3C0089AFFC /* XHWaterfallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,6 @@
 		7D0DFEAE19823B6700E9178E /* XHWaterfallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallCollectionViewCell.m; sourceTree = "<group>"; };
 		7D0DFEAF19823B6700E9178E /* XHWaterfallContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallContainerView.h; sourceTree = "<group>"; };
 		7D0DFEB019823B6700E9178E /* XHWaterfallContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallContainerView.m; sourceTree = "<group>"; };
-		7D0DFEB119823B6700E9178E /* XHWaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallViewController.h; sourceTree = "<group>"; };
-		7D0DFEB219823B6700E9178E /* XHWaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallViewController.m; sourceTree = "<group>"; };
 		7D18DC46197F61A7005059A3 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		7D18DC47197F61A7005059A3 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		7D18DC48197F61A7005059A3 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
@@ -101,6 +99,8 @@
 		7D6257081973883D005D8CB7 /* PinterestExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D62570D1973883D005D8CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinterestExampleTests.m; sourceTree = "<group>"; };
+		7DE7C46E1989DF3C0089AFFC /* XHWaterfallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWaterfallViewController.h; sourceTree = "<group>"; };
+		7DE7C46F1989DF3C0089AFFC /* XHWaterfallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWaterfallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +204,8 @@
 			children = (
 				7D0DFEA419823B6700E9178E /* XHBaseCollectionViewController.h */,
 				7D0DFEA519823B6700E9178E /* XHBaseCollectionViewController.m */,
+				7DE7C46E1989DF3C0089AFFC /* XHWaterfallViewController.h */,
+				7DE7C46F1989DF3C0089AFFC /* XHWaterfallViewController.m */,
 				7D0DFEA619823B6700E9178E /* XHHorizontalPageViewController.h */,
 				7D0DFEA719823B6700E9178E /* XHHorizontalPageViewController.m */,
 				7D0DFEA819823B6700E9178E /* XHNavigationController.h */,
@@ -221,8 +223,6 @@
 				7D0DFEAE19823B6700E9178E /* XHWaterfallCollectionViewCell.m */,
 				7D0DFEAF19823B6700E9178E /* XHWaterfallContainerView.h */,
 				7D0DFEB019823B6700E9178E /* XHWaterfallContainerView.m */,
-				7D0DFEB119823B6700E9178E /* XHWaterfallViewController.h */,
-				7D0DFEB219823B6700E9178E /* XHWaterfallViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 				7D0DFEB319823B6700E9178E /* UICollectionView+XHIndexPath.m in Sources */,
 				7D0DFEBA19823B6700E9178E /* XHNavigationController.m in Sources */,
 				7D0DFEB419823B6700E9178E /* UIView+XHViewFrame.m in Sources */,
-				7D0DFEBE19823B6700E9178E /* XHWaterfallViewController.m in Sources */,
+				7DE7C4701989DF3C0089AFFC /* XHWaterfallViewController.m in Sources */,
 				7D0DFEB819823B6700E9178E /* XHBaseCollectionViewController.m in Sources */,
 				7D0DFEB919823B6700E9178E /* XHHorizontalPageViewController.m in Sources */,
 				7D0DFEB619823B6700E9178E /* XHNavigationControllerDelegate.m in Sources */,

@@ -13,13 +13,13 @@
 #import "CHTCollectionViewWaterfallLayout.h"
 
 #import "XHUIKitMacro.h"
-
+#import "XHWaterfallContainerView.h"
 
 #define kXHContainerViewIdentifier @"XHContainerViewIdentifier"
 
 @interface XHContainerView : UICollectionReusableView
 
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) XHWaterfallContainerView *waterfallContainerView;
 
 @end
 
@@ -27,11 +27,11 @@
 
 #pragma - Propertys
 
-- (UIImageView *)imageView {
-    if (!_imageView){
-        _imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+- (XHWaterfallContainerView *)waterfallContainerView {
+    if (!_waterfallContainerView){
+        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:CGRectMake(5, 5, CGRectGetWidth(self.bounds) - 10, CGRectGetHeight(self.bounds) - 10)];
     }
-    return _imageView;
+    return _waterfallContainerView;
 }
 
 #pragma mark - Life Cycle
@@ -39,14 +39,11 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.imageView];
+        [self addSubview:self.waterfallContainerView];
     }
     return self;
 }
 
-- (void)layoutSubviews {
-    self.imageView.frame = self.bounds;
-}
 
 @end
 
@@ -81,8 +78,9 @@
     if (!_collectionView) {
         _layout = [[CHTCollectionViewWaterfallLayout alloc] init];
         
-        _layout.minimumColumnSpacing = 20;
-        _layout.minimumInteritemSpacing = 30;
+        _layout.minimumColumnSpacing = 10;
+        _layout.minimumInteritemSpacing = 10;
+        _layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         
         _collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:self.layout];
         _collectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -145,7 +143,7 @@
         reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                           withReuseIdentifier:kXHContainerViewIdentifier
                                                                  forIndexPath:indexPath];
-        ((XHContainerView *)reusableView).imageView.image = self.image;
+        ((XHContainerView *)reusableView).waterfallContainerView.imageView.image = self.image;
     }
     
     return reusableView;
