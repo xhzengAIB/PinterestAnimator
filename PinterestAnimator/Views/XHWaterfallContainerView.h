@@ -13,8 +13,17 @@
 @interface XHWaterfallContainerView : UIView
 
 /**
+ *  圆角半径
+ */
+@property (nonatomic, assign) CGFloat cornerRadii;
+
+/**
  *  需要展示和绑定的数据Model
  */
 @property (nonatomic, strong) XHPinterest *displayPinterest;
+
+- (instancetype)initWithFrame:(CGRect)frame
+                  cornerRadii:(CGFloat)cornerRadii;
+
 
 @end

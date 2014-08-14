@@ -11,4 +11,7 @@
 
 @interface XHNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
 
+- (instancetype)initWithNavigationController:(UINavigationController *)navigationController
+                  panGestureRecognizerEnable:(BOOL)panGestureRecognizerEnable;
+
 @end

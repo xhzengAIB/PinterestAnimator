@@ -9,7 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "XHTransitionProtocol.h"
+
+#import "UICollectionView+XHIndexPath.h"
+#import "UIView+XHViewFrame.h"
+#import "XHUIKitMacro.h"
+
 @interface XHPinterestTransition : NSObject <UIViewControllerAnimatedTransitioning>
+
+/**
+ *  缩放参数
+ */
+@property (nonatomic, assign) CGFloat animationScale;
 
 /**
  *  动画参数
@@ -17,8 +28,8 @@
 @property (nonatomic, assign) NSTimeInterval animationDuration;
 
 /**
- *  用于标记push或者pop
+ *  用于可交互性的控制数据，不过有个bug，后续找方案解决
  */
-@property (nonatomic, assign) UINavigationControllerOperation operation;
+@property (nonatomic, assign) BOOL canceled;
 
 @end

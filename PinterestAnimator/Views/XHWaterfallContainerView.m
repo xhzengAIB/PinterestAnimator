@@ -38,7 +38,7 @@
         _backgroundImageView = [[UIImageView alloc] initWithFrame:self.bounds];
         _backgroundImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
-        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:_backgroundImageView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(5, 5)];
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:_backgroundImageView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
         
         CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
         maskLayer.frame = _backgroundImageView.bounds;
@@ -73,11 +73,13 @@
 
 #pragma mark - Life Cycle
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame
+                  cornerRadii:(CGFloat)cornerRadii {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.cornerRadii = cornerRadii;
+        
         [self addSubview:self.backgroundImageView];
         
         [self.backgroundImageView addSubview:self.imageView];

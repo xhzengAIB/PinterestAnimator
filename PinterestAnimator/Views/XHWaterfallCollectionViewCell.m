@@ -26,7 +26,8 @@
 
 - (XHWaterfallContainerView *)waterfallContainerView {
     if (!_waterfallContainerView) {
-        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:self.bounds];
+        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:self.bounds
+                                   cornerRadii:6];
     }
     return _waterfallContainerView;
 }
@@ -45,7 +46,8 @@
 #pragma mark - XHTansitionWaterfallGridViewProtocol
 
 - (UIView *)snapShotForTransition {
-    XHWaterfallContainerView *snapShotView = [[XHWaterfallContainerView alloc] initWithFrame:self.waterfallContainerView.frame];
+    XHWaterfallContainerView *snapShotView = [[XHWaterfallContainerView alloc] initWithFrame:self.waterfallContainerView.frame
+                                              cornerRadii:self.waterfallContainerView.cornerRadii];
     snapShotView.displayPinterest = self.waterfallContainerView.displayPinterest;
     return snapShotView;
 }

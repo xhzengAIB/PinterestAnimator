@@ -31,7 +31,7 @@
 
 - (XHWaterfallContainerView *)waterfallContainerView {
     if (!_waterfallContainerView) {
-        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:CGRectMake(kXHLargeGridItemPadding, kXHLargeGridItemPadding, CGRectGetWidth(self.bounds) - kXHLargeGridItemPadding * 2, CGRectGetHeight(self.bounds) - kXHLargeGridItemPadding * 2)];
+        _waterfallContainerView = [[XHWaterfallContainerView alloc] initWithFrame:CGRectMake(kXHLargeGridItemPadding, kXHLargeGridItemPadding, CGRectGetWidth(self.bounds) - kXHLargeGridItemPadding * 2, CGRectGetHeight(self.bounds) - kXHLargeGridItemPadding * 2) cornerRadii:6 * ((CGRectGetWidth(kXHScreen) - kXHLargeGridItemPadding * 2) / KXHGridItemWidth)];
     }
     return _waterfallContainerView;
 }
@@ -110,6 +110,8 @@
     }
     return self;
 }
+
+#pragma mark - UIScrollView Delegate
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
     if (-scrollView.contentOffset.y > 64) {

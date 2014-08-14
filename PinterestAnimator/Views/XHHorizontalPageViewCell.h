@@ -10,9 +10,11 @@
 
 @class XHPinterest;
 
+// Block
 typedef void(^XHPullDownAction)(CGPoint offset);
-
 typedef void(^XHDidSelectedSubItemAction)(XHPinterest *currentPinterest);
+
+
 
 @interface XHHorizontalPageViewCell : UICollectionViewCell
 

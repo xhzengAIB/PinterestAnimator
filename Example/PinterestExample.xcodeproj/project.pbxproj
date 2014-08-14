@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7D096EF81999B28C00C492A6 /* UICollectionView+XHIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096ED71999B28C00C492A6 /* UICollectionView+XHIndexPath.m */; };
 		7D096EF91999B28C00C492A6 /* UIView+XHViewFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096ED91999B28C00C492A6 /* UIView+XHViewFrame.m */; };
-		7D096EFA1999B28C00C492A6 /* XHPinterestTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EE01999B28C00C492A6 /* XHPinterestTransition.m */; };
 		7D096EFB1999B28C00C492A6 /* XHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EE21999B28C00C492A6 /* XHNavigationControllerDelegate.m */; };
 		7D096EFC1999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EE51999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m */; };
 		7D096F011999B28C00C492A6 /* XHHorizontalPageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D096EF31999B28C00C492A6 /* XHHorizontalPageViewCell.m */; };
@@ -34,6 +33,9 @@
 		7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6257001973883D005D8CB7 /* AppDelegate.m */; };
 		7D6257031973883D005D8CB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6257021973883D005D8CB7 /* Images.xcassets */; };
 		7D62570F1973883D005D8CB7 /* PinterestExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */; };
+		7D630888199C8935008A3771 /* XHPinterestPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D630887199C8935008A3771 /* XHPinterestPushTransition.m */; };
+		7D63088B199C893F008A3771 /* XHPinterestPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63088A199C893F008A3771 /* XHPinterestPopTransition.m */; };
+		7D63088E199C894B008A3771 /* XHPinterestTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D63088D199C894B008A3771 /* XHPinterestTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,6 @@
 		7D096ED81999B28C00C492A6 /* UIView+XHViewFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XHViewFrame.h"; sourceTree = "<group>"; };
 		7D096ED91999B28C00C492A6 /* UIView+XHViewFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XHViewFrame.m"; sourceTree = "<group>"; };
 		7D096EDE1999B28C00C492A6 /* XHTransitionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTransitionProtocol.h; sourceTree = "<group>"; };
-		7D096EDF1999B28C00C492A6 /* XHPinterestTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestTransition.h; sourceTree = "<group>"; };
-		7D096EE01999B28C00C492A6 /* XHPinterestTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestTransition.m; sourceTree = "<group>"; };
 		7D096EE11999B28C00C492A6 /* XHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNavigationControllerDelegate.h; sourceTree = "<group>"; };
 		7D096EE21999B28C00C492A6 /* XHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNavigationControllerDelegate.m; sourceTree = "<group>"; };
 		7D096EE41999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
@@ -94,6 +94,12 @@
 		7D6257081973883D005D8CB7 /* PinterestExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinterestExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D62570D1973883D005D8CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D62570E1973883D005D8CB7 /* PinterestExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinterestExampleTests.m; sourceTree = "<group>"; };
+		7D630886199C8935008A3771 /* XHPinterestPushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestPushTransition.h; sourceTree = "<group>"; };
+		7D630887199C8935008A3771 /* XHPinterestPushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestPushTransition.m; sourceTree = "<group>"; };
+		7D630889199C893F008A3771 /* XHPinterestPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestPopTransition.h; sourceTree = "<group>"; };
+		7D63088A199C893F008A3771 /* XHPinterestPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestPopTransition.m; sourceTree = "<group>"; };
+		7D63088C199C894B008A3771 /* XHPinterestTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPinterestTransition.h; sourceTree = "<group>"; };
+		7D63088D199C894B008A3771 /* XHPinterestTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPinterestTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +168,12 @@
 			isa = PBXGroup;
 			children = (
 				7D096EDD1999B28C00C492A6 /* Protocal */,
-				7D096EDF1999B28C00C492A6 /* XHPinterestTransition.h */,
-				7D096EE01999B28C00C492A6 /* XHPinterestTransition.m */,
+				7D63088C199C894B008A3771 /* XHPinterestTransition.h */,
+				7D63088D199C894B008A3771 /* XHPinterestTransition.m */,
+				7D630886199C8935008A3771 /* XHPinterestPushTransition.h */,
+				7D630887199C8935008A3771 /* XHPinterestPushTransition.m */,
+				7D630889199C893F008A3771 /* XHPinterestPopTransition.h */,
+				7D63088A199C893F008A3771 /* XHPinterestPopTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -422,10 +432,12 @@
 				7D096F0E1999B2A900C492A6 /* XHHorizontalPageViewController.m in Sources */,
 				7D096F011999B28C00C492A6 /* XHHorizontalPageViewCell.m in Sources */,
 				7D096EFC1999B28C00C492A6 /* CHTCollectionViewWaterfallLayout.m in Sources */,
-				7D096EFA1999B28C00C492A6 /* XHPinterestTransition.m in Sources */,
+				7D63088E199C894B008A3771 /* XHPinterestTransition.m in Sources */,
 				7D6257011973883D005D8CB7 /* AppDelegate.m in Sources */,
 				7D096F0F1999B2A900C492A6 /* XHNavigationController.m in Sources */,
 				7D6256FE1973883D005D8CB7 /* main.m in Sources */,
+				7D630888199C8935008A3771 /* XHPinterestPushTransition.m in Sources */,
+				7D63088B199C893F008A3771 /* XHPinterestPopTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

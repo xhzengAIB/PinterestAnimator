@@ -31,6 +31,7 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView){
         _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.collectionViewFlowLayout];
+        [_collectionView setScrollsToTop:NO];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerClass:[XHHorizontalPageViewCell class] forCellWithReuseIdentifier:kXHHorizontalPageViewCellIdentify];

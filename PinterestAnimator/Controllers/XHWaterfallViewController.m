@@ -24,9 +24,6 @@
 #pragma mark - Propertys
 
 - (XHNavigationControllerDelegate *)navigationControllerDelegate {
-    if (!_navigationControllerDelegate) {
-        _navigationControllerDelegate = [[XHNavigationControllerDelegate alloc] init];
-    }
     return _navigationControllerDelegate;
 }
 
@@ -36,7 +33,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Pinterest";
-    self.navigationController.delegate = self.navigationControllerDelegate;
+    
+    if (!_navigationControllerDelegate) {
+        _navigationControllerDelegate = [[XHNavigationControllerDelegate alloc] initWithNavigationController:self.navigationController
+                                                                                  panGestureRecognizerEnable:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
