@@ -31,9 +31,9 @@ and run `pod install`, then you're all done!
 
 ## License
 
-中文: PinterestAnimator 是在GPL v3协议下使用的，可以在LICENSE文件里面找到相关的使用协议信息。
+中文: PinterestAnimator 是在MIT协议下使用的，可以在LICENSE文件里面找到相关的使用协议信息。
 
-English: PinterestAnimator is available under the GPL v3 license, see the LICENSE file for more information.     
+English: PinterestAnimator is available under the MIT license, see the LICENSE file for more information.     
 
 
 Gratitude
