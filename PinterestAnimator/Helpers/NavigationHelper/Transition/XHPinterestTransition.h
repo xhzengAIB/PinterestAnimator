@@ -27,9 +27,13 @@
  */
 @property (nonatomic, assign) NSTimeInterval animationDuration;
 
+
+//可交互性的控制数据，是用上下文来控制的，不用写属性。
+
+
 /**
  *  用于可交互性的控制数据，不过有个bug，后续找方案解决
  */
-@property (nonatomic, assign) BOOL canceled;
+//@property (nonatomic, assign) BOOL canceled;
 
 @end
