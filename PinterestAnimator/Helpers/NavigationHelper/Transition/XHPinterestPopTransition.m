@@ -18,6 +18,7 @@
     
     UIView *containerView = [transitionContext containerView];
     
+    toViewController.view.frame = fromViewController.view.frame;
     UIView *toView = toViewController.view;
     
     [containerView addSubview:toView];
