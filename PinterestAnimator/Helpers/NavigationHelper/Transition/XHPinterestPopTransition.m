@@ -83,7 +83,7 @@
         if (finished) {
             [snapShot removeFromSuperview];
             [whiteViewContainer removeFromSuperview];
-            [transitionContext completeTransition:!self.canceled];
+            [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
         }
         
     }];

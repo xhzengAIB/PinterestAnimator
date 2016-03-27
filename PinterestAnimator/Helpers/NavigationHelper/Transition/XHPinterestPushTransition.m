@@ -67,7 +67,7 @@
             [snapShot removeFromSuperview];
             pageView.hidden = NO;
             fromView.transform = CGAffineTransformIdentity;
-            [transitionContext completeTransition:!self.canceled];
+            [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
         }
     }];
 }
