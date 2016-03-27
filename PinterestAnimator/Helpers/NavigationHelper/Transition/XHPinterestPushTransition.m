@@ -19,6 +19,7 @@
     UIView *containerView = [transitionContext containerView];
 
     UIView *fromView = fromViewController.view;
+    toViewController.view.frame = fromView.frame;
     UIView *toView = toViewController.view;
     
     UICollectionView *waterFallView = [fromViewController transitionCollectionView];
